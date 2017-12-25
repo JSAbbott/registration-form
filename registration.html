@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registration Form</title>
+        <meta name="description" content="Registration Form">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+
+                height: 100vh;
+                background: #e6f2ff; /* For browsers that do not support gradients */
+                background: -webkit-linear-gradient(#e6f2ff, #004080); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(#e6f2ff, #004080); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(#e6f2ff, #004080); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(#e6f2ff, #004080); /* Standard syntax (must be last) */
+
+                font-family: 'Roboto', sans-serif;
+            }
+
+            #content {
+                margin: 0 auto;
+                width: 500px;
+            }
+
+            h1 {
+                    padding-bottom: 20px;
+                }
+
+            #name {
+                    padding-bottom: 20px;
+                }
+
+            #city {
+                    padding-bottom: 20px;
+                }
+
+            #zip {                
+                    padding-bottom: 20px;
+                }
+            
+            input[type=text] {
+                width: 100%;
+                background-color: #ffffff;
+                color: white;
+                padding: 10px 15px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: text;
+            }
+
+            input[type=button] {
+                width: 100%;
+                background-color: #336699;
+                color: white;
+                padding: 10px 15px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=button]:hover {
+                background-color: #4080bf;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div id="content">
+        
+        <h1>Registration Page</h1>
+        
+        <form id="form">        
+            <div id="name">
+                <script>document.write("Name:");</script>
+                <input type="text" value="" id="name">
+            </div>
+
+            <div id="city">
+                <script>document.write("City:");</script>
+                <input type="text" value="" id="city">
+            </div>
+
+            <div id="zip">
+                <script>document.write("Zip Code:");</script>            
+                <input type="text" value="" id="zip">
+            </div>
+        </form>
+        
+        <input type="button" value="Submit" onclick="myFunction()">
+        
+        <script>
+            function myFunction() {
+                var n=document.getElementById("name").value;
+                var c=document.getElementById("city").value;
+                var z=document.getElementById("zip").value;
+
+                alert("Name: " +n+ "\n City: " +c+ "\n Zip: " +z);    
+            }
+        </script>
+            
+        </div>
+        
+    </body>
+</html>
